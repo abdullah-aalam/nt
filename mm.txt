@@ -1,0 +1,10 @@
+<h2>Benefits of Networking</h2>
+            <ul>
+              <li>Find a job</li>
+              <li>Get promoted</li>
+              <li>Learn new things</li>
+              <li>Make new friends</li>
+              <li>Build your personal brand</li>
+            </ul>
+          </section>
+          <section id="benefits"></section>

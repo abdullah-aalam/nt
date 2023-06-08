@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login & Signup Page</title>
+  <link rel="stylesheet" href="gts.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Signup & Login</h1>
+      <form id="signup-form" style="display: none;">
+        <input type="text" placeholder="Full Name" required>
+        <input type="text" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <input type="submit" value="Signup">
+        <p class="message">Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+      </form>
+      <form id="login-form">
+        <input type="text" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+        <p class="message">Don't have an account? <a href="#" onclick="toggleForm()">Signup</a></p>
+      </form>
+      <div class="separator">
+        <span class="or">or</span>
+      </div>
+      <div class="social-icons">
+        <a href="#" class="facebook">F</a>
+        <a href="#" class="twitter">T</a>
+        <a href="#" class="google">G</a>
+      </div>
+    </div>
+  
+    <script>
+      function toggleForm() {
+        var signupForm = document.getElementById("signup-form");
+        var loginForm = document.getElementById("login-form");
+        var message = document.querySelector(".message");
+  
+        if (signupForm.style.display === "none") {
+          signupForm.style.display = "block";
+          loginForm.style.display = "none";
+          message.innerHTML = "Already have an account? <a href='#' onclick='toggleForm()'>Login</a>";
+        } else {
+          signupForm.style.display = "none";
+          loginForm.style.display = "block";
+          message.innerHTML = "Don't have an account? <a href='#' onclick='toggleForm()'>Signup</a>";
+        }
+      }
+    </script>
+  </body>
+  </html>
